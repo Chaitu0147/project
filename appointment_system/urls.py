@@ -20,13 +20,20 @@ from django.urls import  path
 from appointments.views import doctor_list
 from appointments.views import patient_list
 from appointments.views import book_appointment
+from home.views import home,login,register
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('appointments/', doctor_list, name='doctor_list'),
-    path('appointment/', patient_list, name='doctor_list'),
+    path('appointment/', patient_list, name='patient_list'),
     path('appointments/<int:doctor_id>/', book_appointment, name='book_appointment'),
+    path('',home),
+    path('templates/login.html',login),
+    path('templates/register.html',register),
+    path('templates/doctor.html',doctor_list),
+    path('templates/patient.html',patient_list),
+    path('templates/book_appointment.html',book_appointment),
 ]
 
     
