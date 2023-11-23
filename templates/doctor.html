@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor List</title>
+</head>
+<body>
+    <h1 style="text-align:center;color:brown;">DOCTOR LIST</h1>
+    <table border="2">
+        <tr>
+            <th>Doctor Name</th>
+            <th>Specialty</th>
+        </tr>
+        {% for doctor in doctors %}
+            <tr>
+                <td>{{ doctor.name }}</td>
+                <td>{{ doctor.specialty }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
