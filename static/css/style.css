@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li 
+{
+    display: inline-block
+}
+nav ul li a{
+    color:rgb(242, 235, 235);
+    font-size: 20px;
+    text-decoration: uppercase;
+}
+.main{
+    text-align: left;
+    margin: 8%;
+    font-size: 55px;
+    font-family: sans-serif;
+    color-scheme: rgb(241, 238, 238);
+}
+body{
+    background:url("../../static/css/images/img0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

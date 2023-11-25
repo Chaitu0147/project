@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            background-image: url("../../static/css/images/image.jpg");
+            background-size: cover;
+            background-size: fixed;
+            
+
+
+            background-position: center;
+            font-family: Arial, sans-serif; /* Optional: Set a default font-family */
+            margin: 0; /* Optional: Remove default margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Optional: Adjust the height of the container */
+        }
+
+        .form {
+            background-color: rgba(12, 11, 11, 0.8); /* Optional: Add a semi-transparent background to the form */
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #submit {
+            background-color: #f2ebeb;
+            color: rgb(240, 224, 224);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <h1>LOGIN</h1>
+        <input type="email" name="email" class="box" placeholder="Enter username"><br>
+        <input type="password" name="password" class="box" placeholder="Enter password"><br>
+       <a href="attendance_list.html" ><h3 style="text-align:down;color:white"></style>Login</a></h3>
+
+    </form>
+</body>
+</html>

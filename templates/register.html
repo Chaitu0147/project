@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            background-image: url("../../static/css/images/img1.jpg");
+            background-size: cover;
+            background-position: fixed;
+            
+
+
+            background-position: center;
+            font-family:sans-serif;/* Optional: Set a default font-family */
+            margin: 0; /* Optional: Remove d efault margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .form {
+            background-color: rgba(21, 20, 20, 0.8); 
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #submit {
+            background-color: #020802;
+            color: rgb(11, 11, 11);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form" method="POST">{% csrf_token %}
+        <h1> REGISTER </h1>
+        <input type="text" name="firstname" class="box" placeholder=" Firstname">
+        <input type="email" name="email" class="box" placeholder=" Email">
+        <input type="uname" name="username" class="box" placeholder="Username">
+        <input type="password1" name="password" class="box" placeholder=" Password">
+        <input type="password2" name="pass" class="box" placeholder="Confirm Password">
+            <div class="form-group">
+               <a href="http://127.0.0.1:8000/templates/login.html"><h3 style="text-align:down;color:white"></style>Register</a></h3>
+            </div>
+        </form>
+    </div>  
+</body>  
+  
+  
+</html>  

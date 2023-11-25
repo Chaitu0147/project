@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance List</title>
+</head>
+<body>
+    <h1 style="text-align:center;color:brown;">STUDENT_ATTENDENCE</h1>
+    <table  align="center" border="2">
+        
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Present</th>
+        </tr>
+       {% for i in Attendance %}
+        <tr>
+            <td>{{ i.student.name }}</td>
+            <td>{{ i.student.roll_number }}</td>
+            <td>{{ i.present}}</td>
+        </tr>
+        {% endfor %}
+
+        </tr>
+    </table>
+</body>
+</html>

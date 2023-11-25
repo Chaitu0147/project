@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../../static/css/images/img0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(231, 220, 220);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main {
+    text-align: center;
+    margin: 10%;
+    font-size: 2em;
+    color: rgb(215, 221, 215);
+}
+<form action="" class="form">
+        <h1>REGISTRATION </h1>
+    <div class="background-img">  
+        <form class="container">
+            <div class="form-group">
+                <label for="username"><B>Username:</B>
+                <input type="text" id="username" name="username" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="email"><B>Email:</B>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="password"><B>Password</B>
+                <input type="password" id="password" name="password" required><br><br>
+            </div>
